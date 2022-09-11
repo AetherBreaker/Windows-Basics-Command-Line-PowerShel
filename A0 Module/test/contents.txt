@@ -1,0 +1,62 @@
+ Volume in drive C is OS
+ Volume Serial Number is 527A-B860
+
+ Directory of C:\Users\delta\Desktop\A0 Module\test
+
+09/11/2022  06:35 PM    <DIR>          .
+09/11/2022  06:35 PM    <DIR>          ..
+09/11/2022  06:14 PM    <DIR>          blue
+09/11/2022  06:37 PM                 0 contents.txt
+09/11/2022  06:37 PM                 0 foundText.txt
+09/11/2022  06:37 PM                42 getcontents.bat
+09/11/2022  06:14 PM    <DIR>          red
+09/11/2022  06:13 PM               122 scripts.txt
+               4 File(s)            164 bytes
+
+ Directory of C:\Users\delta\Desktop\A0 Module\test\blue
+
+09/11/2022  06:14 PM    <DIR>          .
+09/11/2022  06:14 PM    <DIR>          ..
+09/11/2022  05:04 PM    <DIR>          cyan
+09/11/2022  06:14 PM    <DIR>          next
+               0 File(s)              0 bytes
+
+ Directory of C:\Users\delta\Desktop\A0 Module\test\blue\cyan
+
+09/11/2022  05:04 PM    <DIR>          .
+09/11/2022  05:04 PM    <DIR>          ..
+09/11/2022  05:04 PM                78 COLORS.bat
+               1 File(s)             78 bytes
+
+ Directory of C:\Users\delta\Desktop\A0 Module\test\blue\next
+
+09/11/2022  06:14 PM    <DIR>          .
+09/11/2022  06:14 PM    <DIR>          ..
+09/11/2022  05:04 PM                78 COLORSnext.bat
+               1 File(s)             78 bytes
+
+ Directory of C:\Users\delta\Desktop\A0 Module\test\red
+
+09/11/2022  06:14 PM    <DIR>          .
+09/11/2022  06:14 PM    <DIR>          ..
+09/11/2022  04:07 PM    <DIR>          magenta
+09/11/2022  06:14 PM    <DIR>          next
+               0 File(s)              0 bytes
+
+ Directory of C:\Users\delta\Desktop\A0 Module\test\red\magenta
+
+09/11/2022  04:07 PM    <DIR>          .
+09/11/2022  04:07 PM    <DIR>          ..
+09/11/2022  05:04 PM                78 COLORS.bat
+               1 File(s)             78 bytes
+
+ Directory of C:\Users\delta\Desktop\A0 Module\test\red\next
+
+09/11/2022  06:14 PM    <DIR>          .
+09/11/2022  06:14 PM    <DIR>          ..
+09/11/2022  05:04 PM                78 COLORSnext.bat
+               1 File(s)             78 bytes
+
+     Total Files Listed:
+               8 File(s)            476 bytes
+              20 Dir(s)   2,470,268,928 bytes free
