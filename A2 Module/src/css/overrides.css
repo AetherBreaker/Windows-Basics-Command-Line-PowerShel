@@ -2,28 +2,32 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.contentgrid {
-    display: grid;
-    grid-template-columns: 2;
-    grid-auto-columns: min-content;
-    gap: 0px;
-    grid-auto-rows: min-content;
-}
-
-#para_one {
-    grid-column: 2;
-    grid-row: 1;
-}
-
-#BIG_THE {
-    grid-column: 1;
-    grid-row: 1;
-    display: flex;
+#big-T {
+    display: inline-flex;
     background-image: url("../../assets/images/tree-of-death.jpg");
+    align-items: center;
     width: 125px;
     height: 125px;
-    align-items: center;
+    margin: 0px;
     justify-content: center;
     font-size: 75px;
     color: whitesmoke;
+}
+
+#para-one {
+    width: 82%;
+    display: inline-flex;
+    vertical-align: top;
+    flex-wrap: nowrap;
+}
+
+#para-two {
+    display: flexbox;
+    align-items: center;
+    justify-items: center;
+}
+
+#comparison-img {
+    float: right;
+    margin: 0px 0px 0px 0px;
 }
