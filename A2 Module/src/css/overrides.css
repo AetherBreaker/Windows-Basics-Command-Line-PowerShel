@@ -1,0 +1,10 @@
+.body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#BIG_THE {
+    background-image: url("../../assets/images/tree-of-death.jpg");
+    width: 125px;
+    height: 125px;
+    text-align: center;
+}
