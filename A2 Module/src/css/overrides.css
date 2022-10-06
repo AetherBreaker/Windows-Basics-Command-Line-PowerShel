@@ -19,7 +19,6 @@
     grid-column: 1;
     grid-row: 1;
     display: flex;
-    flex-basis: 10px;
     background-image: url("../../assets/images/tree-of-death.jpg");
     width: 125px;
     height: 125px;
