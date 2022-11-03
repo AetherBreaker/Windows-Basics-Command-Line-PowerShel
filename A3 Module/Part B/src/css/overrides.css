@@ -4,3 +4,25 @@
 img {
     width: 100%;
 }
+
+header {
+    display: flex;
+}
+
+#center_flex {
+    display: flex;
+}
+
+#leftdiv {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#part1 {
+}
+
+#part2 {
+    transform: rotate(-90deg);
+}
