@@ -11,6 +11,7 @@ header {
 
 #center_flex {
     display: flex;
+    align-items: center;
 }
 
 #leftdiv {
@@ -18,11 +19,23 @@ header {
     flex-direction: column-reverse;
     justify-content: flex-end;
     align-items: center;
+    margin: auto 5vw;
+    font-size: 4em;
 }
 
 #part1 {
 }
 
 #part2 {
-    transform: rotate(-90deg);
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    min-width: fit-content;
+    min-height: fit-content;
+}
+
+#cursive_gibberish {
+    font-family: "janeaustennosecret";
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    margin: auto 10vw;
 }

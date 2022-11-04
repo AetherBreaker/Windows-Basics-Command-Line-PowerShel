@@ -4,6 +4,7 @@
         url("fontspring-demo-museosans_500-webfont.woff") format("woff");
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -13,4 +14,5 @@
         url("fontspring-demo-museosans_500_italic-webfont.woff") format("woff");
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }

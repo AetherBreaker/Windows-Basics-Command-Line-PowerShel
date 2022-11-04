@@ -4,14 +4,17 @@
         url("janeaust-webfont.woff") format("woff");
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: "AspiraDemo";
     src: url("AspiraDemo.woff2") format("woff2"),
         url("AspiraDemo.woff") format("woff");
+    font-display: swap;
 }
 @font-face {
     font-family: "PesaroLight";
     src: url("PesaroLight.woff2") format("woff2"),
         url("PesaroLight.woff") format("woff");
+    font-display: swap;
 }
