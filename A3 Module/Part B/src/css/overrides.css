@@ -3,39 +3,120 @@
 
 img {
     width: 100%;
+    height: 100%;
+    max-height: calc(1.25 * 680px);
+    max-width: calc(1.25 * 400px);
+}
+
+body {
+    font-family: "PesaroLight";
+    border: 1px solid #777777;
+    margin: 1.3vw;
 }
 
 header {
     display: flex;
-}
-
-#center_flex {
-    display: flex;
     align-items: center;
+    justify-content: center;
+    margin-bottom: 4.29%;
 }
 
-#leftdiv {
+#title1 {
+    font-family: "AspiraDemo";
+    font-size: 2vw;
+    padding: 18px 39px 24px;
+    border-top: #333333 1px solid;
+    border-bottom: #333333 1px solid;
+    text-align: center;
+}
+
+#title2 {
+    font-size: 15vw;
+}
+
+#center {
+    display: flex;
+    justify-content: space-between;
+}
+
+.center {
+    min-width: 0;
+    flex: auto;
+}
+
+#left {
     display: flex;
     flex-direction: column-reverse;
     justify-content: flex-end;
     align-items: center;
-    margin: auto 5vw;
-    font-size: 4em;
+    margin-top: 7.59%;
+    margin-left: 5.95%;
+    padding-right: 20px;
+    max-width: fit-content;
+}
+
+.left {
+    color: #aaaaaa;
 }
 
 #part1 {
+    display: flex;
+    margin-top: 5.9%;
+    justify-content: center;
+}
+
+.part1 {
+    flex: auto;
+    min-width: 0;
+    font-size: calc(2.5vh + 2.5vw);
+}
+
+#otwo {
+    position: relative;
+}
+
+#otwo::after {
+    content: ".";
+    line-height: 100%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: -40%;
+    top: 100%;
+    transform: translateY(-93%);
+    text-align: center;
 }
 
 #part2 {
+    font-size: calc(5vh + 5vw);
     writing-mode: vertical-lr;
     transform: rotate(180deg);
-    min-width: fit-content;
-    min-height: fit-content;
+}
+
+#gibberish_container {
+    display: flex;
+    flex-direction: column-reverse;
+    max-width: fit-content;
+    padding-top: 40px;
+    padding-left: 40px;
+    margin-right: 12.37%;
+    margin-bottom: 10.95%;
 }
 
 #cursive_gibberish {
     font-family: "janeaustennosecret";
     writing-mode: vertical-lr;
     transform: rotate(180deg);
-    margin: auto 10vw;
+    font-size: calc(1vh + 1vw);
+}
+
+footer {
+    font-family: "AspiraDemo";
+    text-align: center;
+    border-top: #000000 1px solid;
+    border-bottom: #000000 1px solid;
+    width: 100%;
+    padding-top: 0.65%;
+    padding-bottom: 1.3%;
+    margin-top: 4.66%;
 }
