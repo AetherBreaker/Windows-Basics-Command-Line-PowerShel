@@ -1,0 +1,26 @@
+@import "normalize.css";
+@import url("../../assets/fonts/fonts.css");
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: black;
+    color: whitesmoke;
+    font-family: "museo_sans500", "museo_sans500_italic";
+    font-size: 1em;
+}
+
+header {
+    background-image: url("../../assets/images/mars.jpg");
+    background-size: 100% 80%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    min-height: fit-content;
+}
