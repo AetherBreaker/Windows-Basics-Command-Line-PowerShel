@@ -1,26 +1,17 @@
 @import "normalize.css";
 @import url("../../assets/fonts/fonts.css");
-
+@import url("https://use.typekit.net/frv2klm.css");
 img {
-    width: 100%;
-    height: 100%;
-}
-
-body {
-    background-color: black;
-    color: whitesmoke;
-    font-family: "museo_sans500", "museo_sans500_italic";
-    font-size: 1em;
+  height: 100vh;
 }
 
 header {
-    background-image: url("../../assets/images/mars.jpg");
-    background-size: 100% 80%;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: fit-content;
-    min-height: fit-content;
+  font-family: "Adobe Garamond Pro", "Adobe Garamond Pro Bold", "Adobe Garamond Pro Italic", "Adobe Garamond Pro Bold Italic";
+}
+header span {
+  color: red;
+}
+
+body div {
+  display: flex;
 }
