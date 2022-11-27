@@ -1,5 +1,71 @@
-@use 'normalize.css';
+@import "../assets/fonts/fonts.css";
 
-img {
-    max-width: 100%;
+body {
+    font-family: "avenir_lt_std45_book", sans-serif;
+    background: #000;
+    color: #fff;
+}
+
+main {
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    background: #222;
+    padding: 2rem;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 0;
+}
+h1,
+h2,
+h3 {
+    font-family: "moon_2.0", sans-serif;
+}
+h1 {
+    font-size: 4rem;
+}
+h2 {
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1.4rem;
+}
+
+.planet {
+    float: right;
+    border-radius: 50%;
+    border: 20px solid #000;
+    margin-left: 2rem;
+    shape-outside: circle();
+}
+
+div[role="publishinfo"] {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+#occupied {
+    width: 100%;
+    height: auto;
+    margin: 2rem 0;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px dashed;
+}
+
+@media all and (max-width: 600px) {
+    .planet {
+        float: none;
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
 }
