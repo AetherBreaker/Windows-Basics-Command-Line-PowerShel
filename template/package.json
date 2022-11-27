@@ -1,0 +1,25 @@
+{
+    "name": "CIS114 template",
+    "version": "1.0.0",
+    "main": "bin/start_server",
+    "scripts": {
+      "start": "node bin/start_server"
+    },
+    "engines": {
+      "node": ">= 19.0.0"
+    },
+    "dependencies": {
+      "ejs": "latest"
+    },
+    "devDependencies": {
+      "babel-eslint": "latest",
+      "eslint": "latest",
+      "gulp": "latest",
+      "gulp-git": "latest",
+      "gulp-minify-ejs": "latest",
+      "gulp-newer": "latest",
+      "gulp-dart-sass": "latest",
+      "gulp-terser": "latest"
+    }
+  }
+  
