@@ -4,7 +4,7 @@ const gulp = require('gulp');
 const html = require('gulp-newer');
 const ejs = require('gulp-minify-ejs');
 const terser = require('gulp-terser');
-const sass = require('gulp-sass')(require('node-sass'));
+const sass = require('gulp-dart-sass');
 const git = require('gulp-git');
 // const babel = require('gulp-babel');
 
@@ -23,42 +23,53 @@ gulp.task('copy-html', (done) => {
     done();
 });
 
-gulp.task('minify-ejs', (done) => {
-    gulp.src('src/views/*.ejs')
-        .pipe(ejs())
-        .pipe(gulp.dest('public/views'));
+
+gulp.task('copy-assets', (done) => {
+    gulp.src('src/assets/**/*')
+        .pipe(html('public/assets'))
+        .pipe(gulp.dest('public/assets'));
     done();
 });
 
-gulp.task('minify-js', (done) => {
-    gulp.src('src/javascripts/*.js')
-    // .pipe(babel({
-    //     presets: ['@babel/env']
-    // }))
-        .pipe(terser())
-        .pipe(gulp.dest('public/javascripts'));
-    done();
-});
+// gulp.task('minify-ejs', (done) => {
+//     gulp.src('src/views/*.ejs')
+//         .pipe(ejs())
+//         .pipe(gulp.dest('public/views'));
+//     done();
+// });
+
+// gulp.task('minify-js', (done) => {
+//     gulp.src('src/javascripts/*.js')
+//     // .pipe(babel({
+//     //     presets: ['@babel/env']
+//     // }))
+//         .pipe(terser())
+//         .pipe(gulp.dest('public/javascripts'));
+//     done();
+// });
 
 gulp.task('compile-sass', (done) => {
     gulp.src('src/css/*.scss')
-        .pipe(sass({outputStyle: 'compressed'}))
-        .pipe(gulp.dest('public/css'));
+        .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+        .pipe(gulp.dest('public/css'))
+        .pipe(gulp.dest('src/css'));
     done();
 });
 
 gulp.task('watch', () => {
     gulp.watch('src/views/*.html', gulp.series('copy-html'));
+    gulp.watch('src/assets/**/*', gulp.series('copy-assets'));
     gulp.watch('src/css/*.scss', gulp.series('compile-sass'));
     // gulp.watch('src/views/*.ejs', gulp.series('minify-ejs'));
     // gulp.watch('src/javascripts/main.js', gulp.series('minify-js'));
-    gulp.watch('./public/**/*', gulp.series('git-add'));
+    // gulp.watch('./public/**/*', gulp.series('git-add'));
 });
 
 gulp.task('default', gulp.parallel(
     // 'git-add',
     // 'minify-ejs',
     'copy-html',
+    'copy-assets',
     'compile-sass',
     // 'minify-js',
     'watch'
